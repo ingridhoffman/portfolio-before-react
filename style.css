@@ -5,19 +5,23 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    font-family: Quicksand;
+    font-family: 'Raleway', sans-serif;
     color: snow;
 }
-
 h1 {
     font-size: 72pt;
-    line-height: 96pt;
+    line-height: 200px;
 }
 h2 {
-    font-size: 36pt;
-    line-height: 48pt;
+    font-size: 24pt;
+    line-height: 36pt;
 }
 p {
     font-size: 14pt;
     line-height: 24pt;
+}
+
+li {
+    font-size: 12pt;
+    line-height: 18pt;
 }
