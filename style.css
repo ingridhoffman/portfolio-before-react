@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(38, 34, 73);
+    width: 800px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-family: Quicksand;
+    color: snow;
+}
+
+h1 {
+    font-size: 72pt;
+    line-height: 96pt;
+}
+h2 {
+    font-size: 36pt;
+    line-height: 48pt;
+}
+p {
+    font-size: 14pt;
+    line-height: 24pt;
+}
