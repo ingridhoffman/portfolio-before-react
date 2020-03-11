@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# Portfolio
 
-You can use the [editor on GitHub](https://github.com/ingridhoffman/ingridhoffman.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my professional portfolio site. This website is intended to provide useful information about me to potential employers and/or new clients.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### User Story
 
-### Markdown
+AS A potential employer and/or client
+I WANT to understand Ingrid's work experience, skills, quality of work, and personality
+SO THAT I can determine if she is a good fit for our company or project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Development Notes
 
-```markdown
-Syntax highlighted code block
+### Build Process
 
-# Header 1
-## Header 2
-### Header 3
+1. Site structure and planning
+2. HTML framework (with temporary content)
+3. Desktop functionality
+4. Desktop styling
+5. Mobile functionality
+6. Mobile styling
+7. Content
 
-- Bulleted
-- List
+### Functionality Criteria
 
-1. Numbered
-2. List
+IF A USER wants to view specific content on the desktop site
+THERE IS a navigation bar with a link to the relevant section
+IF A USER wants to view specific content on the mobile site
+THERE IS a hamburger menu with a link to the relevant section
+IF A USER is currently viewing a section of the site
+THERE IS a clear indication in the navigation of which section is currently being viewed
 
-**Bold** and _Italic_ and `Code` text
+IF A USER clicks a link in the navigation (mobile and desktop)
+THEN the selected section scrolls into the browser window
+IF A USER clicks on a project in the portfolio section
+THEN detailed information for that project appears in the portfolio section
+IF A USER clicks on the resume icon
+THEN a pdf version of the resume opens and can be downloaded
+IF A USER clicks on Contact Me
+THEN a popup window opens with a friendly contact message
+IF A USER clicks on a web icon
+THEN my personal page for that web service opens in a new tab
 
-[Link](url) and ![Image](src)
-```
+### Known Issues
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Acknowledgements
 
-### Jekyll Themes
+Design does not happen in a vacuum. For this website I drew inspiration from many other beautiful portfolio sites including:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ingridhoffman/ingridhoffman.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Site URL
