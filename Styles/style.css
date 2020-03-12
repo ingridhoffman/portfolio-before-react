@@ -1,5 +1,176 @@
 /* PAGE */
+html {
+	background-color: #2a2c41;
+}
+
+.container {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 85%;
+	padding: 3% 5% 0% 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	width: 100%;
+}
+
+main {
+	width: 80%;
+}
+
+article {
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+.split {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 2%;
+}
+
+.grid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+aside {
+	width: 15%;
+	height: 25vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding-top: 10%;
+	text-align: right;
+}
+
+footer {
+	width: 100%;
+	text-align: right;
+}
 
 /* TEXT */
+/* font families for multiple*/
+h2,
+nav,
+button {
+	font-family: "Sen", sans-serif;
+}
+
+p,
+.sideNote {
+	font-family: "Montserrat", sans-serif;
+}
+/* font color for multiple*/
+h1,
+h2,
+nav,
+a,
+a:visited,
+.sideNote {
+	color: #050b49;
+}
+/* font styling individually*/
+h1 {
+	font-family: "Syncopate", sans-serif;
+	font-size: 5em;
+	text-align: right;
+	margin-top: 15%;
+	margin-bottom: 10%;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+p {
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+nav {
+	font-size: 1.1em;
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #e68a22;
+}
+
+.philosophy {
+	max-width: 400px;
+	margin-top: 3%;
+}
+
+.sideNote {
+	text-indent: 60%;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
 
 /* ELEMENTS */
+.hide {
+	display: none;
+}
+
+.pop {
+	font-family: "Syncopate", sans-serif;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: #cc6c1e !important;
+}
+
+.primaryImage {
+	width: 60%;
+	height: auto;
+}
+
+.projectInfo {
+	width: 35%;
+}
+
+.projectCard {
+	width: 24.5%;
+	height: auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.right {
+	text-align: right;
+}
+button {
+	background-color: #cc6c1e;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	padding: 0.5% 1%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+i {
+	font-size: 2em;
+	padding: 0.25em;
+}

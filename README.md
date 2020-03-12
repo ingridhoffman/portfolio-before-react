@@ -14,10 +14,10 @@ SO THAT I can determine if she is a good fit for our company or project
 
 1. Site structure and planning
 2. HTML framework (with temporary content)
-3. Desktop functionality
-4. Desktop styling
-5. Mobile functionality
-6. Mobile styling
+3. Desktop styling
+4. Desktop functionality
+5. Mobile styling
+6. Mobile functionality
 7. Content
 
 ### Functionality Criteria
@@ -42,8 +42,8 @@ THEN my personal page for that web service opens in a new tab
 
 ### Known Issues
 
-### Acknowledgements
-
-Design does not happen in a vacuum. For this website I drew inspiration from many other beautiful portfolio sites including:
+1. need scroll snap to page sections
+2. need mouse over image to show project title
+3. use html picture tag and image source sets for better mobile browsing
 
 ## Site URL
