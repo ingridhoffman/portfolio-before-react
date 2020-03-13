@@ -1,6 +1,7 @@
 /* PAGE */
 html {
 	background-color: #2a2c41;
+	scroll-behavior: smooth;
 }
 
 .container {
@@ -46,34 +47,42 @@ aside {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	padding-top: 10%;
+	padding-top: 5%;
 	text-align: right;
 }
 
 footer {
-	width: 100%;
+	width: 15%;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	padding-bottom: 2%;
 	text-align: right;
 }
 
 /* TEXT */
 /* font families for multiple*/
 h2,
+h3,
 nav,
-button {
+a {
 	font-family: "Sen", sans-serif;
 }
 
 p,
-.sideNote {
+.sideNote,
+input {
 	font-family: "Montserrat", sans-serif;
 }
 /* font color for multiple*/
 h1,
 h2,
+h3,
 nav,
 a,
 a:visited,
-.sideNote {
+.sideNote,
+.emphasize {
 	color: #050b49;
 }
 /* font styling individually*/
@@ -88,6 +97,11 @@ h1 {
 h2 {
 	font-size: 1.5em;
 	line-height: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+	text-align: center;
 }
 
 p {
@@ -123,6 +137,10 @@ a:active {
 	margin-bottom: 1em;
 }
 
+.emphasize {
+	font-weight: 700;
+}
+
 /* ELEMENTS */
 .hide {
 	display: none;
@@ -135,42 +153,106 @@ a:active {
 	color: #cc6c1e !important;
 }
 
-.primaryImage {
+#selectProjectImage {
 	width: 60%;
 	height: auto;
 }
 
-.projectInfo {
+.invisible {
+	opacity: 0;
+}
+
+.overlap {
+	margin-top: 25%;
+	margin-left: -100%;
+}
+
+#selectProjectInfo {
 	width: 35%;
 }
 
 .projectCard {
 	width: 24.5%;
 	height: auto;
+	position: relative;
 }
 
 img {
 	width: 100%;
 	height: auto;
+	pointer-events: none;
+}
+
+.cardName {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	pointer-events: none;
 }
 
 .right {
 	text-align: right;
 }
-button {
-	background-color: #cc6c1e;
-	border: none;
+
+.button {
+	border: solid 1px #2a2c41;
 	border-radius: 3px;
 	color: white;
-	padding: 0.5% 1%;
+	padding: 0.5em;
+	width: 8em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1em;
 	margin-bottom: 1em;
+	margin-right: 3em;
 }
 
-i {
+.button:hover,
+.button:active {
+	border: solid 1px #e68a22;
+}
+
+.icons {
 	font-size: 2em;
-	padding: 0.25em;
+}
+
+#myContact {
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	top: 0;
+	left: 0;
+	display: none;
+	position: fixed;
+	background-color: #313131;
+	overflow: auto;
+}
+
+#contactForm {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 900px;
+	min-width: 250px;
+	background-color: #fff;
+	border: solid 1px gray;
+	border-radius: 5px;
+	padding: 1%;
+	font-size: 1.5em;
+	overflow-wrap: break-word;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid gray;
+	outline: none;
+	margin: 0;
+	padding: 0 0.5em;
+	font-size: 1em;
+	overflow-wrap: break-word;
 }

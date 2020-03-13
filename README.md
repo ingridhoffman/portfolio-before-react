@@ -3,11 +3,13 @@
 Welcome to my professional portfolio site. This website is intended to provide useful information about me to potential employers and/or new clients.
 
 ### User Story
+
 ```
 AS A potential employer and/or client
 I WANT to understand Ingrid's work experience, skills, quality of work, and personality
 SO THAT I can determine if she is a good fit for our company or project
 ```
+
 ## Development Notes
 
 ### Build Process
@@ -16,11 +18,12 @@ SO THAT I can determine if she is a good fit for our company or project
 2. HTML framework (with temporary content)
 3. Desktop styling
 4. Desktop functionality
-5. Mobile styling
-6. Mobile functionality
-7. Content
+5. Content
+6. Mobile styling
+7. Mobile functionality
 
 ### Functionality Criteria
+
 ```
 IF A USER wants to view specific content on the desktop site
 THERE IS a navigation bar with a link to the relevant section
@@ -40,10 +43,18 @@ THEN a popup window opens with a friendly contact message
 IF A USER clicks on a web icon
 THEN my personal page for that web service opens in a new tab
 ```
+
 ### Known Issues
 
-1. need scroll snap to page sections
-2. need mouse over image to show project title
-3. use html picture tag and image source sets for better mobile browsing
+- need scroll snap to page sections
+- use html picture tag and image source sets for better mobile browsing
+- position sections at top of page when using nav links (will scroll snap work for this too?)
+- article style overflow:hidden?
+- verify valid email address
+- no functionality for send button on contact form
+- custom error messages rather than alerts
+- update script to ES6+
+- nav menu not correctly responding to current article on page (maybe this is also fixed with snap scroll?)
+- build out selected project section to provide more project info and images
 
 ## Site URL
