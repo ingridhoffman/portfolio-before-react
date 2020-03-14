@@ -55,6 +55,13 @@ THEN my personal page for that web service opens in a new tab
 - custom error messages rather than alerts
 - update script to ES6+
 - nav menu not correctly responding to current article on page (maybe this is also fixed with snap scroll?)
-- build out selected project section to provide more project info and images
+- selected project section should be built out to provide more project info, contributor names and urls, and flexibility for multiple images
+- project images should be imporved to show on various screen frames and/or be animated gifs with scrolling capabilities
+- sticky footer could overlap sticky nav if viewport is partularly short - perhaps Intersction Observer could be used to make it disappear in this case
+- project card name maintaining large padding or margin on sides but no style seems to dictate this
+- why does page scroll to middle when page is refreshed???
+- autofocus not working on contact form
 
 ## Site URL
+
+https://ingridhoffman.github.io/

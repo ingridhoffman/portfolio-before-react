@@ -1,39 +1,44 @@
 const projects = [
 	{
-		name: "Project",
-		statement: "A bit about the project",
+		name: "Karao Kan I ?",
+		statement:
+			"This collaborative project sought to playfully assist in the impactful decision that most of us at some point will face: 'Do I stand up and sing? Or sit down and drink?'. The application pulls data from two open API sources to provide various artist versions of the song searched by the user, and then offers the album title and image, lyrics, and a play sample for each version of the song.",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
-		image1: "Assets/placeholder-blue.png",
+		image1: "Assets/ingridhoffman.github.io_KaraoKanI.png",
 		image2: "Assets/placeholder-blue.png",
-		link: "#"
+		contributors: ["Andrew McIntire", "https://github.com/imAnonAmi"],
+		link: "https://ingridhoffman.github.io/KaraoKanI/"
 	},
 	{
-		name: "Project",
-		statement: "A bit about the project",
+		name: "Multiplication Flashcards",
+		statement:
+			"When I told my kids that I was going back to school to learn web development my son got very excited that I would soon be able to build video games for him. So I created this application for him to practice his multiplication facts. Yes, his response was somewhat underwhelming but it has been a practical solution to a current challenge. Next up, robots verus zombies (becasue I did promise).",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
-		image1: "Assets/placeholder-blue.png",
+		image1: "Assets/ingridhoffman.github.io_Multiplication-Flashcards_.png",
 		image2: "Assets/placeholder-blue.png",
-		link: "#"
+		link: "https://ingridhoffman.github.io/Multiplication-Flashcards/"
 	},
 	{
-		name: "Project",
-		statement: "A bit about the project",
+		name: "Weather Dashboard",
+		statement:
+			"This server-side API project challenged 'build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.'",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
-		image1: "Assets/placeholder-blue.png",
+		image1: "Assets/ingridhoffman.github.io_WeatherDashboard_.png",
 		image2: "Assets/placeholder-blue.png",
-		link: "#"
+		link: "https://ingridhoffman.github.io/WeatherDashboard/"
 	},
 	{
-		name: "Project",
-		statement: "A bit about the project",
+		name: "Aerial Performance",
+		statement:
+			"Is my previous life as an aerial performer, choreographer, and instructor directly relevant to my current work as a developper? Perhaps not, but the experiences and travel of that time have certainly colored my life perspective and influence my drive for innovation and creativity.",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
-		image1: "Assets/placeholder-blue.png",
+		image1: "Assets/Picture 019.jpeg",
 		image2: "Assets/placeholder-blue.png",
-		link: "#"
+		link: ""
 	}
 ];
 
@@ -41,8 +46,6 @@ const projects = [
 $(document).ready(function() {
 	// populate project grid with project cards
 	projects.forEach(function(object, index) {
-		console.log(object);
-		console.log(index);
 		let cardDiv = `<div class="projectCard" id="${index}"></div>`;
 		let cardImage = `<img src="${object.image1}" alt="image of ${object.name}" />`;
 		let cardName = `<h3 class="cardName invisible">${object.name}</h3>`;
@@ -80,8 +83,11 @@ $(document).ready(function() {
 		$("#selectProjectImage").removeClass("invisible");
 		// show select project info
 		let projectInfo = `<h2>${selected.name}</h2><p>${selected.statement}</p>`;
-		let projectButton = `<div class="right"><a href="${selected.link}" rel="external" target="_blank" class="button">view project</a></div>`;
 		$("#selectProjectInfo").html(projectInfo);
-		$("#selectProjectInfo").append(projectButton);
+		// show link button if url exists
+		if (selected.link !== "") {
+			let projectButton = `<div class="right"><a href="${selected.link}" rel="external" target="_blank" class="button">view project</a></div>`;
+			$("#selectProjectInfo").append(projectButton);
+		}
 	});
 });
