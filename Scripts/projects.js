@@ -1,3 +1,4 @@
+// object array for projects
 const projects = [
 	{
 		name: "Karao Kan I ?",
@@ -13,7 +14,7 @@ const projects = [
 	{
 		name: "Multiplication Flashcards",
 		statement:
-			"When I told my kids that I was going back to school to learn web development my son got very excited that I would soon be able to build video games for him. So I created this application for him to practice his multiplication facts. Yes, his response was somewhat underwhelming but it has been a practical solution to a current challenge. Next up, robots verus zombies (becasue I did promise).",
+			"When I told my kids that I was going back to school to learn web development my son got very excited that I would soon be able to build video games for him. So I created this application for him to practice his multiplication facts. Yes, his response was somewhat underwhelming but it has been a practical solution to a current challenge. Next up, robots verus zombies (because I did promise).",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
 		image1: "Assets/ingridhoffman.github.io_Multiplication-Flashcards_.png",
@@ -33,7 +34,7 @@ const projects = [
 	{
 		name: "Aerial Performance",
 		statement:
-			"Is my previous life as an aerial performer, choreographer, and instructor directly relevant to my current work as a developper? Perhaps not, but the experiences and travel of that time have certainly colored my life perspective and influence my drive for innovation and creativity.",
+			"Is my previous life as an aerial performer, choreographer, and instructor directly relevant to my current work as a developer? Perhaps not, but the experiences, collaboration, and travel of that time have certainly colored my life perspective and influenced my drive for innovation and creativity.",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
 		image1: "Assets/Picture 019.jpeg",
@@ -56,6 +57,7 @@ $(document).ready(function() {
 
 	// event listener for mouse over projects
 	$(".projectCard").hover(
+		// show card name on mouse enter
 		function() {
 			$(this)
 				.children(".cardName")
@@ -64,6 +66,7 @@ $(document).ready(function() {
 				.children("img")
 				.addClass("invisible");
 		},
+		// show image on mouse exit
 		function() {
 			$(this)
 				.children(".cardName")
@@ -74,7 +77,7 @@ $(document).ready(function() {
 		}
 	);
 
-	// event listener for click on projects
+	// event listener for click to select project
 	$(".projectCard").on("click", function(event) {
 		// show select project image
 		let selected = projects[event.target.id];

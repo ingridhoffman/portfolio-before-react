@@ -2,7 +2,6 @@
 $(document).ready(function() {
 	// event listener for contact
 	$("#contactLink").on("click", function(event) {
-		console.log("clicked");
 		// diplay popup contact form
 		$("#myContact").show();
 		// set form for use or reset if previously submitted
@@ -12,9 +11,11 @@ $(document).ready(function() {
 		$("#topic").val("");
 		$("#email").val("");
 		$("#thanks").hide();
+		// put focus in first input box
+		$("#name").focus();
 	});
 
-	// event listener for close contact
+	// event listener for click to close contact window
 	$("#close").on("click", function(event) {
 		console.log("clicked");
 		// hide popup contact form
@@ -27,12 +28,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		// verify user input
 		console.log($("#name").val());
-		if (
-			$("#name").val() === "" ||
-			$("#company").val() === "" ||
-			$("#topic").val() === "" ||
-			$("#email").val() === ""
-		) {
+		if ($("#name").val() === "" || $("#company").val() === "" || $("#topic").val() === "" || $("#email").val() === "") {
 			alert("Please complete all fields.");
 		} else {
 			// send contact form - NOT YET FUNCTIONAL

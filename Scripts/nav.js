@@ -15,10 +15,9 @@ $(document).ready(function() {
 			});
 		},
 		// set active range when section fills 70% fo screen
-		// set top border to arbitrary high number out of range of content so it doesn't trigger
-		{ rootMargin: "800% 0% -70% 0%" }
+		{ rootMargin: "0% 0% -70% 0%" }
 	);
-
+	// observe articles for intersection with root margin
 	document.querySelectorAll("article").forEach(article => {
 		observer.observe(article);
 	});

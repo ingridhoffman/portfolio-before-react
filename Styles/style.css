@@ -156,15 +156,15 @@ a {
 	font-weight: 700;
 }
 
-/* ELEMENTS */
-.hide {
-	display: none;
-}
-
 .pop {
 	font-weight: 700;
 	font-size: 1.3em;
 	color: #cc6c1e !important;
+}
+
+/* ELEMENTS */
+.hide {
+	display: none;
 }
 
 #selectProjectImage {
@@ -239,6 +239,7 @@ img {
 	font-size: 2em;
 }
 
+/* CONTACT FORM */
 #myContact {
 	width: 100%;
 	height: 100%;

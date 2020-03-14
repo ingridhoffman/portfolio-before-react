@@ -61,6 +61,8 @@ THEN my personal page for that web service opens in a new tab
 - project card name maintaining large padding or margin on sides but no style seems to dictate this
 - why does page scroll to middle when page is refreshed???
 - autofocus not working on contact form
+- need resume
+- linkedIn needs update
 
 ## Site URL
 
