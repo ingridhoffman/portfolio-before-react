@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+	/* stack project image and project info */
+	#selectProjectImage {
+		width: 100%;
+		height: auto;
+	}
+
+	#selectProjectInfo {
+		width: 100%;
+	}
+}

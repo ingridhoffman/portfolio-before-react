@@ -2,6 +2,7 @@
 html {
 	background-color: #2a2c41;
 	scroll-behavior: smooth;
+	font-size: calc(0.8em + 0.7vw);
 }
 
 .container {
@@ -31,7 +32,7 @@ article {
 
 .split {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	position: relative;
 	margin-bottom: 2%;
@@ -101,34 +102,34 @@ a:active,
 
 /* font styling individually*/
 h1 {
-	font-size: 5em;
+	font-size: 3em;
 	text-align: right;
 	margin-top: 15%;
 	margin-bottom: 5%;
 }
 
 h2 {
-	font-size: 1.5em;
-	line-height: 3em;
+	font-size: 1.2em;
+	line-height: 1.5em;
 	text-align: right;
 	margin-right: 4rem;
 }
 
 h3 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: center;
 }
 
 p {
-	font-size: 1em;
+	font-size: 0.9em;
 	letter-spacing: 0.05em;
-	line-height: 2em;
+	line-height: 1.8em;
 	margin-bottom: 1em;
 }
 
 nav {
-	font-size: 1.1em;
-	line-height: 1.4em;
+	font-size: 1em;
+	line-height: 1.3em;
 }
 
 a {
@@ -142,23 +143,25 @@ a {
 
 .sideNote {
 	display: flex;
-	justify-content: space-between;
-	margin: 1em 4rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 2rem;
 }
 
 .sideNote li {
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: 700;
-	padding: 1em;
+	padding: 0.5rem 1rem;
 }
 
 .emphasize {
 	font-weight: 700;
+	line-height: 1.4em;
 }
 
 .pop {
 	font-weight: 700;
-	font-size: 1.3em;
+	font-size: 0.9em;
 	color: #cc6c1e !important;
 }
 
@@ -236,7 +239,7 @@ img {
 }
 
 .icons {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 /* CONTACT FORM */
