@@ -48,20 +48,17 @@ THEN my personal page for that web service opens in a new tab
 
 The following is a list of things I will be working on in the next few weeks (feedback and/or helpful hints are always appreciated):
 
-- scroll snap to page sections
+- nav menu not correctly responding to current article on page
+- sticky footer overlaps sticky nav at start of page - perhaps Intersection Observer could be used to make it disappear until clear
 - use html picture tag and image source sets for better mobile browsing
-- position sections at top of page when using nav links (will scroll snap work for this too?)
 - article style overflow:hidden?
 - verify valid email address
 - functionality for send button on contact form
 - custom error messages rather than alerts
 - update script to ES6
-- nav menu not correctly responding to current article on page (maybe this is also fixed with snap scroll?)
 - selected project section should be built out to provide more project info, contributor names and urls, and flexibility for multiple images
 - project images should be improved to show on various screen frames and/or be animated gifs with scrolling capabilities
-- sticky footer overlaps sticky nav at start of page - perhaps Intersection Observer could be used to make it disappear until clear
 - project card name maintaining large padding or margin on sides but no style seems to dictate this
-- why does page scroll to middle when page is refreshed???
 - autofocus not working on contact form
 - need to create resume
 - linkedIn needs update

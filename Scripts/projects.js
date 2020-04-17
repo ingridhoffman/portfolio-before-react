@@ -9,7 +9,7 @@ const projects = [
 		image1: "Assets/ingridhoffman.github.io_KaraoKanI.png",
 		image2: "Assets/placeholder-blue.png",
 		contributors: ["Andrew McIntire", "https://github.com/imAnonAmi"],
-		link: "https://ingridhoffman.github.io/KaraoKanI/"
+		link: "https://ingridhoffman.github.io/KaraoKanI/",
 	},
 	{
 		name: "Multiplication Flashcards",
@@ -19,17 +19,27 @@ const projects = [
 		strategy: "Development strategy",
 		image1: "Assets/ingridhoffman.github.io_Multiplication-Flashcards_.png",
 		image2: "Assets/placeholder-blue.png",
-		link: "https://ingridhoffman.github.io/Multiplication-Flashcards/"
+		link: "https://ingridhoffman.github.io/Multiplication-Flashcards/",
 	},
+	// {
+	// 	name: "Weather Dashboard",
+	// 	statement:
+	// 		"This server-side API project challenged 'build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.",
+	// 	ideas: "Key ideas, concepts, and/or priorities",
+	// 	strategy: "Development strategy",
+	// 	image1: "Assets/ingridhoffman.github.io_WeatherDashboard_.png",
+	// 	image2: "Assets/placeholder-blue.png",
+	// 	link: "https://ingridhoffman.github.io/WeatherDashboard/",
+	// },
 	{
-		name: "Weather Dashboard",
+		name: "Eat De Burger",
 		statement:
-			"This server-side API project challenged 'build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.'",
+			"Fun web interface that allows users to imagine and (virtually) devour their own uniquely tasty hamburgers. This Node based app follows MVC design pattern and utilizes MySQL, Express, and Handlebars.",
 		ideas: "Key ideas, concepts, and/or priorities",
 		strategy: "Development strategy",
-		image1: "Assets/ingridhoffman.github.io_WeatherDashboard_.png",
+		image1: "Assets/EatDeBurger.png",
 		image2: "Assets/placeholder-blue.png",
-		link: "https://ingridhoffman.github.io/WeatherDashboard/"
+		link: "https://dashboard.heroku.com/apps/eat-de-burger",
 	},
 	{
 		name: "Aerial Performance",
@@ -39,14 +49,14 @@ const projects = [
 		strategy: "Development strategy",
 		image1: "Assets/Picture 019.jpeg",
 		image2: "Assets/placeholder-blue.png",
-		link: ""
-	}
+		link: "",
+	},
 ];
 
 // when document is ready
-$(document).ready(function() {
+$(document).ready(function () {
 	// populate project grid with project cards
-	projects.forEach(function(object, index) {
+	projects.forEach(function (object, index) {
 		let cardDiv = `<div class="projectCard" id="${index}"></div>`;
 		let cardImage = `<img src="${object.image1}" alt="image of ${object.name}" />`;
 		let cardName = `<h3 class="cardName invisible">${object.name}</h3>`;
@@ -58,27 +68,19 @@ $(document).ready(function() {
 	// event listener for mouse over projects
 	$(".projectCard").hover(
 		// show card name on mouse enter
-		function() {
-			$(this)
-				.children(".cardName")
-				.removeClass("invisible");
-			$(this)
-				.children("img")
-				.addClass("invisible");
+		function () {
+			$(this).children(".cardName").removeClass("invisible");
+			$(this).children("img").addClass("invisible");
 		},
 		// show image on mouse exit
-		function() {
-			$(this)
-				.children(".cardName")
-				.addClass("invisible");
-			$(this)
-				.children("img")
-				.removeClass("invisible");
+		function () {
+			$(this).children(".cardName").addClass("invisible");
+			$(this).children("img").removeClass("invisible");
 		}
 	);
 
 	// event listener for click to select project
-	$(".projectCard").on("click", function(event) {
+	$(".projectCard").on("click", function (event) {
 		// show select project image
 		let selected = projects[event.target.id];
 		let projectImage = `<img src="${selected.image1}" alt="image of ${selected.name}" />`;
