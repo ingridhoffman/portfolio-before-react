@@ -1,24 +1,25 @@
 // when document is ready
-$(document).ready(function() {
-	// scroll observer to animate navigation for active section
-	// adapted from https://www.hweaver.com/intersection-observer-single-page-navigation/
-	// and https://css-tricks.com/a-few-functional-uses-for-intersection-observer-to-know-when-an-element-is-in-view/
-	let observer = new IntersectionObserver(
-		(entries, observer) => {
-			entries.forEach(entry => {
-				// remove old active class
-				document.querySelector(".pop").classList.remove("pop");
-				// get id of current article
-				const id = entry.target.id;
+$(document).ready(function () {
+	// scroll to top when page is refreshed
+	$(this).scrollTop(0);
+
+	// highlight active section on scroll
+	$(window).scroll(function () {
+		var position = $(this).scrollTop();
+
+		$("article").each(function () {
+			var target = $(this).offset().top - 300;
+			var id = $(this).attr("id");
+
+			if (position >= target) {
+				// remove active class from other nav links
+				$("nav li a").removeClass("pop");
 				// activate currect section nav link
-				document.querySelector(`[href="#${id}"]`).classList.add("pop");
-			});
-		},
-		// set active range when section fills 70% fo screen
-		{ rootMargin: "0% 0% -70% 0%" }
-	);
-	// observe articles for intersection with root margin
-	document.querySelectorAll("article").forEach(article => {
-		observer.observe(article);
+				$(`[href="#${id}"]`).addClass("pop");
+				// document.querySelector(`[href="#${id}"]`).classList.add("pop");
+			}
+		});
+
+		// event listener to slide sidebar in & out in mobile view
 	});
 });

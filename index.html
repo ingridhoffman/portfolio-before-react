@@ -18,154 +18,177 @@
 		<script src="Scripts/contact.js"></script>
 	</head>
 	<body class="container">
-		<!-- Header with statement and name -->
-		<header>
-			<div class="philosophy">
-				<p class="emphasize">
-					“The secret of change is to focus all of your energy, not on fighting the old, but building on the new.“
-				</p>
-				<p class="right">- Socrates</p>
-			</div>
-
-			<h1>Ingrid Hoffman</h1>
-		</header>
-		<!-- Aside with sticky nav -->
+		<!-- Sidebar -->
 		<aside>
+			<!-- Aside with sticky nav -->
 			<nav>
 				<ul>
-					<li><a href="#aboutMe" class="pop">about me</a></li>
-					<li><a href="#myWork">work</a></li>
-					<li><a href="#myExperience">resume</a></li>
-					<li><a href="#0" id="contactLink">contact</a></li>
+					<li><a href="#about">about me</a></li>
+					<li><a href="#work">work</a></li>
+					<li><a href="#experience">resume</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
-		</aside>
-		<!-- Main page content navigated by article -->
-		<main>
-			<!-- Article about me professionally and personally -->
-			<article id="aboutMe">
-				<p>
-					I am a full-stack web developer with an emphasis on front-end design. I am currently completing a Certificate
-					for Full Stack Web Development from the University of Oregon Extension in which I am developing skills in
-					responsive design, Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL,
-					Java, and more, as well as building a deeper knowledge on my previous experience with HTML, CSS, and
-					JavaScript. I am also completing online courses in UI/UX design working in Adobe XP, Sketch, and Invision.
-					These new skills layer over extensive understanding of structure, design, and innovation from my years of
-					experience working in architecture and interior design.
-				</p>
-				<h2>At Work</h2>
-				<p>
-					I thrive on learning and growth, turning thoughts into action, and going above and beyond the expected
-					outcome. I excel at understanding the needs and goals of projects and clients and optimizing strategies for
-					successful results.
-				</p>
-				<ul class="sideNote">
-					<li>Learner</li>
-					<li>Relator</li>
-					<li>Activator</li>
-					<li>Maximizer</li>
-					<li>Strategic</li>
-				</ul>
-				<p class="right">
-					I am eager to put my passion, strengths, and new skills to work for an innovative and dynamic company.
-				</p>
-				<h2>At Play</h2>
-				<p>
-					Every day my kids teach me something new that I can apply to all aspects of my life. To savor a moment hiking
-					a hill or reading a book. To play at gardening or rock climbing. To let worry go and enjoy a mountain ski
-					adventure or a quiet chat with friends. And of course to experience the joy of unrestrained laughter over a
-					board game or experimental cocktail.
-				</p>
-			</article>
-			<!-- Article with portfolio -->
-			<article id="myWork">
-				<div class="split">
-					<div class="invisible" id="selectProjectImage">
-						<img src="Assets/IMG_2657.jpeg" alt="placeholder" />
-					</div>
-					<div id="selectProjectInfo">
-						<p class="overlap emphasize">
-							A great project exceeds the users needs and enhances the brand image of the client. I take pride in my
-							work being a true reflection of the company's aesthetic rather than my style. To achieve this, I place
-							great importance on understanding the values, brand, and culture of the company I am working for, and
-							strive to translate the stated needs into an effective and forward-thinking application.
-						</p>
-					</div>
-				</div>
-				<div class="grid" id="portfolio"></div>
-			</article>
-			<!-- Article with experience, skills, and resume -->
-			<article id="myExperience">
-				<p class="emphasize">
-					I am both the new kid and an experienced colleague.
-				</p>
-				<div class="right">
-					<a href="Assets/resume.pdf" rel="alternate" target="_blank" class="button">resume </a>
-				</div>
-				<p>
-					University of Oregon bootcamp is my first official tech developer certification program but coding concepts
-					are not foreign to me. I was introduced to C++ in computer science classes at college and remember the thrill
-					of creating a functioning hangman game. During my years as an independent interior designer, I learned HTML,
-					CSS, and some JavaScript to create my own e-commerce website with customizable service packages.
-				</p>
-				<p>
-					My many years of working in the architecture field have provided valuable understanding of the logic of
-					structures and how to overlay design on an established frame. I have also developed a strength in turning
-					iteration towards innovation. At my recent job as an Associate with LRS Architects, I managed projects and
-					teams, guided project design from concept through implementation, and instigated internal evolution in the
-					form of a graphic brand refresh and improved integration of architecture and interior design in the project
-					process.
-				</p>
-				<h2>Proficiencies</h2>
-				<ul class="sideNote">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Bootstrap</li>
-					<li>Javascript</li>
-					<li>Jquery</li>
-					<li>ES6</li>
-					<li>AdobeXP</li>
-					<li>Sketch</li>
-				</ul>
-				<p class="right">
-					If you'd like to start a conversation, please reach out to me via the contact link.
-				</p>
-			</article>
-		</main>
-		<!-- Section pop-up contact form -->
-		<section id="myContact" class="hide">
-			<div id="contactForm">
-				<p class="right"><i class="far fa-window-close" id="close"></i></p>
-				<form action="#" method="post" name="contact" id="contact">
-					<p class="emphasize">Hi Ingrid.</p>
-					<p>
-						My name is
-						<input type="text" name="name" placeholder="Name" size="20" id="name" />
-						and I work with
-						<input type="text" name="company" placeholder="Company" size="20" id="company" />
-						. I'd like to chat with you about
-						<input type="text" name="topic" placeholder="Topic" size="40" id="topic" />
-						. Please email me at
-						<input type="text" name="email" placeholder="Email" size="30" id="email" />
-						.
-					</p>
-					<div class="right">
-						<button type="submit" class="button" id="send">send</button>
-					</div>
-				</form>
-				<div id="thanks"><p>Thank you for your message!</p></div>
-			</div>
-		</section>
-		<!-- Footer with stickly icon links -->
-		<footer>
-			<nav>
+			<!-- Footer with stickly icon links -->
+			<footer class="right">
 				<a href="https://www.linkedin.com/in/ingrid-c-hoffman/" rel="external" target="_blank" class="icons">
 					<i class="fab fa-linkedin"></i>
 				</a>
 				<a href="https://github.com/ingridhoffman" rel="external" target="_blank" class="icons">
 					<i class="fab fa-github"></i>
 				</a>
-			</nav>
-		</footer>
+				<p class="sidebar">ingridhoffman@me.com</p>
+			</footer>
+		</aside>
+		<!-- Main page content navigated by article -->
+		<main>
+			<!-- Header with statement and name -->
+			<header>
+				<div class="mobile-menu"><i class="fas fa-bars"></i></div>
+				<div class="quote">
+					<p class="emphasize">
+						“The secret of change is to focus all of your energy, not on fighting the old, but building on the new.“
+					</p>
+					<p class="right">- Socrates</p>
+				</div>
+
+				<h1>Ingrid Hoffman</h1>
+			</header>
+			<!-- Article about me professionally and personally -->
+			<article id="about">
+				<h2>Full-stack developer with an emphasis on design and application architecture.</h2>
+				<div class="cardholder">
+					<div class="card-reverse">
+						<h3></h3>
+						<p>
+							I prioritize understanding the values, brand, and culture of the company I am working for, and strive to
+							translate the stated needs into an effective and forward-thinking application.
+						</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_problem_2148912.png" alt="learn icon" />
+						<h3>Learner</h3>
+						<p>
+							I thrive on learning and growth. Each new project presents a challenge to push beyond the expected.
+						</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_networking_2148898.png" alt="learn icon" />
+						<h3>Relator</h3>
+						<p>
+							By forming authentic connections, I can recognize the value each individual offers, and understand and
+							translate priorities among collaborators and stakeholders.
+						</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_Idea_204651.png" alt="learn icon" />
+						<h3>Activator</h3>
+						<p>Ideation has great value. Turning those thoughts into action is where I live.</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_grow_2134952.png" alt="learn icon" />
+						<h3>Maximizer</h3>
+						<p>
+							Teasing out the hidden gems in every project and activating the unique strengths in every team member is
+							how I can help take a project from great to superb.
+						</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_Planning process_2148913.png" alt="learn icon" />
+						<h3>Strategic</h3>
+						<p>
+							My agile and iterative decision process is ideally suited to optimizing strategies for successful results
+							within the realistic restraints.
+						</p>
+					</div>
+				</div>
+			</article>
+			<!-- Article with portfolio -->
+			<article id="work">
+				<h2>A great project exceeds the users needs and enhances the brand image of the client.</h2>
+				<div class="cardholder" id="portfolio"></div>
+			</article>
+			<!-- Article with experience, skills, and resume -->
+			<article id="experience">
+				<h2>
+					Bringing valuable expertise and experience to a new career path.
+				</h2>
+				<p>
+					Through a breadth of experience in architecture and design, I have developed valuable skills and knowledge
+					that translate directly to the world of technology including:
+				</p>
+				<p class="bullets">
+					<i class="far fa-check-circle"></i>
+					Creating intuitive and aesthetically pleasing user facing design
+				</p>
+				<p class="bullets">
+					<i class="far fa-check-circle"></i>
+					Building a functional, logical, and efficient framework
+				</p>
+				<p class="bullets">
+					<i class="far fa-check-circle"></i>
+					Structuring for an authentic integration of back-end and front-end experience
+				</p>
+				<p class="bullets">
+					<i class="far fa-check-circle"></i>
+					Strength in translating iteration and changing variables into innovation for an improved outcome
+				</p>
+
+				<div class="right">
+					<a href="Assets/resume.pdf" rel="alternate" target="_blank" class="button">resume </a>
+				</div>
+				<h2>Proficiencies</h2>
+				<div class="cardholder">
+					<div class="card">
+						<img src="./Assets/icons/noun_learn_355071.png" alt="learn icon" />
+						<h3>Technical Skills</h3>
+						<p class="bullets">
+							Node.js, Express, MySQL, MongoDB
+						</p>
+						<p class="bullets">
+							Javascript, JQuery, ES6+, AJAX
+						</p>
+						<p class="bullets">
+							Node.js, Express, MySQL, MongoDB
+						</p>
+					</div>
+					<div class="card">
+						<img src="./Assets/icons/noun_management_2025303.png" alt="learn icon" />
+						<h3>Transferable Skills</h3>
+						<p class="bullets">
+							Project Management - budgets, schedules, team coordination, resource and labor allocation
+						</p>
+						<p class="bullets">
+							Communication - understanding and translating between areas of expertise and stakeholder priorities
+						</p>
+					</div>
+				</div>
+			</article>
+			<!-- Article with contact form -->
+			<article id="contact">
+				<h2>
+					Let's start a conversation...
+				</h2>
+				<div class="form-box">
+					<form action="#" method="post" name="contact" id="contact">
+						<p class="emphasize">Hi Ingrid.</p>
+						<p>
+							My name is
+							<input type="text" name="name" placeholder="Name" id="name" />
+							and I work with
+							<input type="text" name="company" placeholder="Company" id="company" />
+							I'd like to chat with you about
+							<input type="text" name="topic" placeholder="Topic" id="topic" />
+							Please email me at
+							<input type="text" name="email" placeholder="Email" id="email" />
+						</p>
+						<div class="right">
+							<button type="submit" class="button" id="send">send</button>
+						</div>
+					</form>
+					<div id="thanks"><p>Thank you for your message!</p></div>
+				</div>
+			</article>
+		</main>
 	</body>
 </html>

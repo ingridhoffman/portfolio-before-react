@@ -1,29 +1,7 @@
 // when document is ready
-$(document).ready(function() {
-	// event listener for contact
-	$("#contactLink").on("click", function(event) {
-		// diplay popup contact form
-		$("#myContact").show();
-		// set form for use or reset if previously submitted
-		$("#contact").show();
-		$("#name").val("");
-		$("#company").val("");
-		$("#topic").val("");
-		$("#email").val("");
-		$("#thanks").hide();
-		// put focus in first input box
-		$("#name").focus();
-	});
-
-	// event listener for click to close contact window
-	$("#close").on("click", function(event) {
-		console.log("clicked");
-		// hide popup contact form
-		$("#myContact").hide();
-	});
-
+$(document).ready(function () {
 	// event listener for send contact form
-	$("#send").on("click", function(event) {
+	$("#send").on("click", function (event) {
 		// prevent default
 		event.preventDefault();
 		// verify user input

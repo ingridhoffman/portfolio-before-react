@@ -1,11 +1,16 @@
 @media only screen and (max-width: 768px) {
-	/* stack project image and project info */
-	#selectProjectImage {
-		width: 100%;
-		height: auto;
+	/* eliminate sidebar */
+	aside {
+		width: 200px;
+		transform: translateX(-210px);
+		transition: transform 0.3s linear;
 	}
 
-	#selectProjectInfo {
-		width: 100%;
+	.mobile-menu {
+		display: block;
+	}
+
+	.card-project {
+		flex-shrink: 1;
 	}
 }
