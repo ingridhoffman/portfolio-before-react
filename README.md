@@ -69,4 +69,4 @@ Icons:
 
 # Site URL
 
-https://ingridhoffman.github.io/
+https://ingridhoffman.github.io/portfolio-before-react/
